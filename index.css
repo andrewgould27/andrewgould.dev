@@ -13,15 +13,11 @@
 	} 
 }
 
-body {
-	background-color: #eee;
-}
 
 #app {
 	padding: var(--sitePadding);
 	max-width: 1600px;
 	margin: 0 auto;
-	color: #777;
 }
 
 .logo {
@@ -29,7 +25,6 @@ body {
 	letter-spacing: 0;
 	line-height: 1;
 	font-weight: 800;
-	/*text-shadow: 10px 10px 10px #373737;*/
 }
 
 span[class*="space"] {
@@ -39,4 +34,8 @@ span[class*="space"] {
 }
 .space {
 	--spacer: 3rem;
+}
+
+.highlight {
+	color: #0051ba;
 }
