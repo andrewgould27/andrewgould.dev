@@ -2,13 +2,44 @@
 <html lang="en">
 	<head>
 		<title>andrewgould.dev</title>
-		<link href="./index.css" type="text/css" rel="stylesheet">
+		<!-- Skelet Framework CDN -->
+		<link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/selekkt-skelet@latest/css/skelet.min.css">
+		<!-- Local CSS -->
+		<link rel="stylesheet" href="./index.css">
 	</head>
 
 	<body>
-		<div id="wrapper">
-			<h1>andrewgould.dev</h1>
-			<h3>a deep dive</h3>
+		<div id="app">
+			<main>
+				<x-grid columns=8>
+					<x-col span="row">
+						<div class="logo">andrewgould.dev</div>
+					</x-col>
+				</x-grid>
+				<span class="space1"></span>
+				<x-grid columns=8>
+					<x-cell span=2>
+						<h3>Interests</h3>
+						<ul>
+							<li>Computer Hardware</li>
+						</ul>
+					</x-cell>
+					<x-cell span=2>
+						<h3>Projects</h3>
+						<ul>
+							<li>Quantitative trading systems</li>
+							<li>High performance computation systems</li>
+						</ul>
+					</x-cell>
+					<x-cell span=2>
+						<h3>Technologies</h3>
+					</x-cell>
+					<x-cell span=2>
+						<h3>Interests</h3>
+					</x-cell>
+				</x-grid>
+			</main>
 		</div>
 	</body>
 </html>

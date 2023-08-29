@@ -1,14 +1,38 @@
-body {
-	background-color: #333;
-	font-family: sans-serif;
-	color: #eee;
+:root {
+	--fontSize: calc(100vw / 90);
+	--hHeading: 9vw;
+	--sitePadding: 5rem;
+	--margin: 2rem;
 }
 
-#wrapper {
-	width: 80%;
+@media (max-width: 600px) { 
+	:root {
+		--fontSize: 0.8rem; 
+		--hHeading: 3rem;
+		--sitePadding: 2rem;
+	} 
+}
+
+#app {
+	padding: var(--sitePadding);
+	max-width: 1600px;
 	margin: 0 auto;
+	color: #777;
 }
 
-#wrapper h1 {
-	text-shadow: #111 5px 5px 5px;
+.logo {
+	font-size: var(--hHeading);
+	letter-spacing: 0;
+	line-height: 1;
+	font-weight: 800;
+	/*text-shadow: 10px 10px 10px #373737;*/
+}
+
+span[class*="space"] {
+	display: block;
+	width: 100%;
+	margin: var(--spacer, 0.5rem) auto;
+}
+.space {
+	--spacer: 3rem;
 }
