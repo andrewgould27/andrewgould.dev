@@ -13,6 +13,10 @@
 	} 
 }
 
+body {
+	background-color: #eee;
+}
+
 #app {
 	padding: var(--sitePadding);
 	max-width: 1600px;
